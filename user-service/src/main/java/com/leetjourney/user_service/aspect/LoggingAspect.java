@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Slf4j
 public class LoggingAspect {
+    // Custome Code to print before and after service methods.
 
     @Pointcut("execution(* com.leetjourney.user_service.service.*.*(..))")
     public void serviceMethods() {}
